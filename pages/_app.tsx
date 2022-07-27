@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import Head from "@/components/common/Head";
 import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
 import ThemeStyles from "@/components/Theme/ThemeStyles";
+import { Provider } from "react-redux";
+import store from "../redux/store";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = createTheme({});
@@ -10,9 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head />
-      <ThemeStyles>
-        <Component {...pageProps} />
-      </ThemeStyles>
+      <Provider store={store}>
+        <ThemeStyles>
+          <Component {...pageProps} />
+        </ThemeStyles>
+      </Provider>
     </>
   );
 }

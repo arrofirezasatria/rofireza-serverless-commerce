@@ -1,15 +1,20 @@
-import { Typography } from "@mui/material";
-import type { NextPage } from "next";
+import { Container, Typography } from "@mui/material";
 import Head from "next/head";
+import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Typography variant="body3">adadas</Typography>
-    </div>
+    </Container>
   );
-};
+}
 
-export default Home;
+export async function getStaticProps() {
+  return {
+    props: {},
+    revalidate: 60,
+  };
+}
