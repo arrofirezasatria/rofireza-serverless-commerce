@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function MarqueeCard() {
   return (
-    <Box>
-      <Image src={"/vercel.svg"} width={60} height={160} />
+    <Box sx={{ py: 2 }}>
+      <Image src={"/logo S.png"} width={80} height={80} />
     </Box>
   );
 }

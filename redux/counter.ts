@@ -23,3 +23,7 @@ export const counterSlice = createSlice({
     },
   },
 });
+
+export const { increment, decrement, addByAmount } = counterSlice.actions;
+
+export default counterSlice.reducer;

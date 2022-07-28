@@ -37,36 +37,34 @@ export default function Home() {
           </Link>
         </Stack>
       </Stack>
-      <Box
-        sx={{
-          position: "absolute",
-          width: "100%",
-          left: 0,
-          backgroundColor: "lightGray",
-        }}
-      >
-        <Marquee pauseOnHover={true} speed={10}>
-          <Stack
-            direction="row"
-            sx={{
-              display: "flex",
-              width: "100%",
-              justifyContent: "space-around",
-            }}
-          >
-            <MarqueeCard />
-            <MarqueeCard />
-            <MarqueeCard />
-            <MarqueeCard />
-            <MarqueeCard />
-          </Stack>
-        </Marquee>
+      <Box sx={{ height: "142px" }}>
+        <Box
+          sx={{
+            position: "absolute",
+            width: "100%",
+            left: 0,
+            backgroundColor: "transparent",
+          }}
+        >
+          <Marquee pauseOnHover={true} speed={10} play={true}>
+            <Stack
+              direction="row"
+              sx={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "space-around",
+              }}
+            >
+              <MarqueeCard />
+              <MarqueeCard />
+              <MarqueeCard />
+              <MarqueeCard />
+              <MarqueeCard />
+            </Stack>
+          </Marquee>
+        </Box>
       </Box>
-      <Typography sx={{}}>this is footer</Typography>
-      <Box sx={{}}>adadaad</Box>
-      <Footer />
-      <Typography sx={{}}>this is footer</Typography>
-      <Box sx={{}}>adadaad</Box>
+      {/* <Footer /> */}
     </Container>
   );
 }
