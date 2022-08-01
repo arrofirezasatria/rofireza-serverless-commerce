@@ -13,10 +13,11 @@ import Marquee from "react-fast-marquee";
 import MarqueeCard from "@/components/common/Card/MarqueeCard";
 import Link from "next/link";
 import Footer from "@/components/common/Footer";
+import AppsContainer from "@/components/Layout/AppsContainer";
 
 export default function Home() {
   return (
-    <Container>
+    <AppsContainer>
       <Typography variant="body3">adadas</Typography>
       <Stack direction="row" spacing={2} sx={{ my: 12, px: 8 }}>
         <Typography
@@ -65,7 +66,7 @@ export default function Home() {
         </Box>
       </Box>
       {/* <Footer /> */}
-    </Container>
+    </AppsContainer>
   );
 }
 
