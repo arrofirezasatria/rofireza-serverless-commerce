@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "sanity-cms"
+    "name": "sanity-cms",
+    "basePath": "/sanity-cms"
   },
   "api": {
     "projectId": "e82ckg6y",
